@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="36bb0573a8eb4c3ba5545a75ab9fce6f" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.AssemblyUnitSpec" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Equipment" Width="1.5" PointX="6" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EquipmentTypes" Width="1.5" PointX="3.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Furniture" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FurnitureSpec" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Materials" Width="1.5" PointX="0.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaterialsSpec" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaterialsType" Width="1.5" PointX="1.5" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.OperationSpec" Width="1.5" PointX="6" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Orders" Width="1.5" PointX="6" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Products" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Providers" Width="1.5" PointX="1.5" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Roles" Width="1.5" PointX="1.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="8.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Units" Width="1.5" PointX="1.5" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Users" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_AssemblyUnitSpec_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Equipment_EquipmentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_OperationSpec_EquipmentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Furniture_Providers" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Furniture_Units" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_FurnitureSpec_Furniture" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_FurnitureSpec_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Materials_MaterialsType" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Materials_Providers" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Materials_Units" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_MaterialsSpec_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_MaterialsSpec_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_OperationSpec_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Orders_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Orders_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
