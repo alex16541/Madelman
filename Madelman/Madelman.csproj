@@ -67,9 +67,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AdminMenu.xaml.cs">
-      <DependentUpon>AdminMenu.xaml</DependentUpon>
-    </Compile>
     <Compile Include="AppWindow.xaml.cs">
       <DependentUpon>AppWindow.xaml</DependentUpon>
     </Compile>
@@ -80,6 +77,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DepDirectorMenu.xaml.cs">
+      <DependentUpon>DepDirectorMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Equipment.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
@@ -92,6 +92,19 @@
     </Compile>
     <Compile Include="FurnitureSpec.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMenu.xaml.cs">
+      <DependentUpon>ManagerMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Master.cs" />
+    <Compile Include="DirectorMenu.xaml.cs">
+      <DependentUpon>DirectorMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMenu.xaml.cs">
+      <DependentUpon>CustomerMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMenu.xaml.cs">
+      <DependentUpon>MasterMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Materials.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
@@ -114,6 +127,9 @@
     <Compile Include="Providers.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Roles.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
     </Compile>
@@ -126,13 +142,13 @@
     <Compile Include="Users.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
     </Compile>
-    <Page Include="AdminMenu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="AppWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DepDirectorMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -156,6 +172,30 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ManagerMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DirectorMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomerMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MasterMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.Entity;
-using System.Linq;
 
 namespace Madelman
 {
@@ -29,6 +28,8 @@ namespace Madelman
             db = new Entities();
             db.Users.Load();
             db.Roles.Load();
+            this.Top = (1080 - this.Height) / 2;
+            this.Left = (1920 - this.Width) / 2;
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
@@ -39,12 +40,21 @@ namespace Madelman
             Users user = db.Users.Where(u => u.Login == login && u.Password == password).FirstOrDefault();
             if(user != null)
             {
-                new AppWindow().Show();
+                new AppWindow(user.Roles.Title).Show();
+                db.Dispose();
+                this.Close();
             }
             else
             {
-
+                MessageBox.Show("Введён неправельный логин или пароль", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
+        }
+
+        private void btnReg_Click(object sender, RoutedEventArgs e)
+        {
+            new Registration().Show();
+            db.Dispose();
+            this.Close();
         }
     }
 }

@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Windows.Navigation;
 
 
+
 namespace Madelman
 {
     /// <summary>
@@ -21,10 +22,34 @@ namespace Madelman
     /// </summary>
     public partial class AppWindow : NavigationWindow
     {
-        public AppWindow()
+        public AppWindow(string role)
         {
             InitializeComponent();
-            this.NavigationService.Navigate(new AdminMenu());
+            this.Top = (1080 - this.Height) / 2;
+            this.Left = (1920 - this.Width) / 2;
+            switch (role)
+            {
+                case "Менеджер":
+                    this.Title = "Manager";
+                    this.NavigationService.Navigate(new ManagerMenu(this)); 
+                    break;
+                case "Заместитель директора":
+                    this.Title = "Dep. Director";
+                    this.NavigationService.Navigate(new DepDirectorMenu(this));
+                    break;
+                case "Заказчик":
+                    this.Title = "Customer";
+                    this.NavigationService.Navigate(new ManagerMenu(this));
+                    break;
+                case "Директор":
+                    this.Title = "Director";
+                    this.NavigationService.Navigate(new DirectorMenu(this));
+                    break;
+                case "Мастер":
+                    this.Title = "Master";
+                    this.NavigationService.Navigate(new MasterMenu(this));
+                    break;
+            }
         }
     }
 }

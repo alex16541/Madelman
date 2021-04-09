@@ -16,13 +16,14 @@ using System.Windows.Shapes;
 namespace Madelman
 {
     /// <summary>
-    /// Логика взаимодействия для AdminMenu.xaml
+    /// Логика взаимодействия для ManagerMenu.xaml
     /// </summary>
-    public partial class AdminMenu : Page
+    public partial class ManagerMenu : Master
     {
-        public AdminMenu()
+        public ManagerMenu(Window window)
         {
             InitializeComponent();
+            appWindow = window;
         }
     }
 }
