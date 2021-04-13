@@ -1,4 +1,4 @@
-﻿<Page x:Class="Madelman.MaterialsPage"
+﻿<Page x:Class="Madelman.FurniturePage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -15,7 +15,7 @@
                 <DataGridTextColumn Header="Название" Binding="{Binding Title}"/>
                 <DataGridTextColumn Header="Количество" Binding="{Binding Count}"/>
                 <DataGridTextColumn Header="Ед. измерения" Binding="{Binding Units.Title}"/>
-                <DataGridTextColumn Header="Закупочная цена" Binding="{Binding Coast}"/>
+                <DataGridTextColumn Header="Закупочная цена" Binding="{Binding BuyCoast}"/>
                 <DataGridTextColumn Header="Поставщик" Binding="{Binding Providers.Title}"/>
                 <DataGridTextColumn Header="Срок доставки" Binding="{Binding Providers.DeliveryPeriod}"/>
                 <DataGridTemplateColumn Visibility="Hidden">

@@ -9,10 +9,10 @@
       Title="MaterialsAndFurnitureBase"
       Background="White">
     <Grid>
-        <Frame x:Name="Frame" Width="1000" Margin="40,35,40,149"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="40,607,0,0" VerticalAlignment="Top" Width="75" Click="btnBack_Click"/>
-        <Button x:Name="btnMaterials" Content="Materials" HorizontalAlignment="Left" Margin="839,607,0,0" VerticalAlignment="Top" Width="75" Click="btnMaterials_Click"/>
-        <Button x:Name="btnFurniture" Content="Furniture" HorizontalAlignment="Left" Margin="965,607,0,0" VerticalAlignment="Top" Width="75" Click="btnFurniture_Click"/>
+        <Frame x:Name="Frame" Width="1000" Margin="0,35,0,140"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="40,0,0,50" VerticalAlignment="Bottom" Width="75" Click="btnBack_Click"/>
+        <Button x:Name="btnMaterials" Content="Materials" HorizontalAlignment="Left" Margin="839,0,0,50" VerticalAlignment="Bottom" Width="75" Click="btnMaterials_Click"/>
+        <Button x:Name="btnFurniture" Content="Furniture" HorizontalAlignment="Left" Margin="965,0,0,50" VerticalAlignment="Bottom" Width="75" Click="btnFurniture_Click"/>
 
     </Grid>
 </Page>

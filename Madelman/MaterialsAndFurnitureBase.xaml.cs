@@ -38,7 +38,7 @@ namespace Madelman
 
         private void btnFurniture_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new FurniturePage());
         }
     }
 }

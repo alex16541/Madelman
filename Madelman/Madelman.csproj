@@ -81,6 +81,12 @@
     <Compile Include="DepDirectorMenu.xaml.cs">
       <DependentUpon>DepDirectorMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditMaterialsPage.xaml.cs">
+      <DependentUpon>EditMaterialsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditWindow.xaml.cs">
+      <DependentUpon>EditWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Equipment.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
     </Compile>
@@ -111,6 +117,9 @@
     </Compile>
     <Compile Include="MaterialsAndFurnitureBase.xaml.cs">
       <DependentUpon>MaterialsAndFurnitureBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FurniturePage.xaml.cs">
+      <DependentUpon>FurniturePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MaterialsPage.xaml.cs">
       <DependentUpon>MaterialsPage.xaml</DependentUpon>
@@ -156,6 +165,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="EditMaterialsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -197,6 +214,10 @@
     <Page Include="MaterialsAndFurnitureBase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FurniturePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MaterialsPage.xaml">
       <SubType>Designer</SubType>
