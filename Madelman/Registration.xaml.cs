@@ -64,6 +64,7 @@ namespace Madelman
                                         };
                                         db.Users.Add(user);
                                         db.SaveChanges();
+                                        btnExit_Click(sender, e);
                                     }
                                     else MessageBox.Show("Неправильный пароль.", "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                                 }

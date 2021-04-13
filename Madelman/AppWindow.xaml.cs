@@ -35,6 +35,7 @@ namespace Madelman
                     break;
                 case "Заместитель директора":
                     this.Title = "Dep. Director";
+                    Properties.Settings.Default.IsEditableTablse = true;
                     this.NavigationService.Navigate(new DepDirectorMenu(this));
                     break;
                 case "Заказчик":
@@ -43,6 +44,7 @@ namespace Madelman
                     break;
                 case "Директор":
                     this.Title = "Director";
+                    Properties.Settings.Default.IsEditableTablse = true;
                     this.NavigationService.Navigate(new DirectorMenu(this));
                     break;
                 case "Мастер":

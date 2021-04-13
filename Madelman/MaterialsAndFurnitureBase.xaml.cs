@@ -12,23 +12,33 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.Entity;
 
 namespace Madelman
 {
     /// <summary>
-    /// Логика взаимодействия для MasterMenu.xaml
+    /// Логика взаимодействия для MaterialsAndFurnitureBase.xaml
     /// </summary>
-    public partial class DirectorMenu : Master
+    public partial class MaterialsAndFurnitureBase : Page
     {
-        public DirectorMenu(Window window)
+        public MaterialsAndFurnitureBase()
         {
             InitializeComponent();
-            appWindow = window;
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
         }
 
         private void btnMaterials_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new MaterialsAndFurnitureBase());
+            Frame.Navigate(new MaterialsPage());
+        }
+
+        private void btnFurniture_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
