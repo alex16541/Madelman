@@ -28,17 +28,19 @@ namespace Madelman
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.GoBack();
+            NavigationService.GoBack();
         }
 
         private void btnMaterials_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(new MaterialsPage());
+            if(Frame.NavigationService.Content != new MaterialsPage())
+                Frame.Navigate(new MaterialsPage());
         }
 
         private void btnFurniture_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(new FurniturePage());
+            if (Frame.NavigationService.Content != new FurniturePage())
+                Frame.Navigate(new FurniturePage());
         }
     }
 }

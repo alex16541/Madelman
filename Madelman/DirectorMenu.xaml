@@ -8,12 +8,13 @@
       d:DesignHeight="720" d:DesignWidth="1080"
       Title="MasterMenu" Background="White">
 
-    <Grid>
-        <Button x:Name="btnExit" Content="Exit" 
-            HorizontalAlignment="Left" 
-            Margin="950,640,0,0" 
-            VerticalAlignment="Top" 
-            Width="75" Click="btnExit_Click"/>
-        <Button x:Name="btnMaterials" Content="Materials" HorizontalAlignment="Center" Margin="0,0,0,100" VerticalAlignment="Center" Width="75" Click="btnMaterials_Click"/>
+    <Grid Background="White">
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Right" Margin="0,0,38,38" VerticalAlignment="Bottom" Width="118" Click="btnExit_Click" 
+                FontSize="20" FontFamily="Comic Sans MS" Height="50" Background="#FFE34234" Foreground="White" BorderBrush="Black"/>
+        <Button x:Name="btnMaterials" Content="Materials and furniture" HorizontalAlignment="Center" Margin="0,0,0,100" 
+                VerticalAlignment="Center" Width="296" Click="btnMaterials_Click" FontSize="20" FontFamily="Comic Sans MS" Height="80" 
+                Background="#FFE34234" Foreground="White" BorderBrush="Black" />
+        <Label Content="Director menu" HorizontalAlignment="Left" Margin="462,82,0,0" VerticalAlignment="Top" 
+               FontSize="21" FontFamily="Comic Sans MS" FontWeight="Bold"/>
     </Grid>
 </local:Master>

@@ -7,28 +7,34 @@
         mc:Ignorable="d"
         Title="Registration" Height="450" Width="400" MinHeight="450" MinWidth="400" MaxWidth="400" MaxHeight="450">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0.31"/>
+                <GradientStop Color="#FFE34234" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Button x:Name="btnExit" Content="Cancel" 
             HorizontalAlignment="Left" 
-            Margin="218,374,0,0" 
+            Margin="173,388,0,0" 
             VerticalAlignment="Top" 
-            Width="75" Click="btnExit_Click"/>
+            Width="120" Click="btnExit_Click" FontFamily="Comic Sans MS" Background="Firebrick" Foreground="White"/>
         <Button x:Name="btnRegister" Content="Register" 
             HorizontalAlignment="Left" 
-            Margin="108,374,0,0" 
+            Margin="173,298,0,0" 
             VerticalAlignment="Top" 
-            Width="75" Click="btnRegister_Click"/>
-        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="173,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="pbPassword" HorizontalAlignment="Left" Height="23" Margin="173,109,0,0" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="pbRepPassword" HorizontalAlignment="Left" Height="23" Margin="173,137,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbFirstName" HorizontalAlignment="Left" Height="23" Margin="173,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbSecondName" HorizontalAlignment="Left" Height="23" Margin="173,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbLastName" HorizontalAlignment="Left" Height="23" Margin="173,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="128,82,0,0" TextWrapping="NoWrap" Text="Login:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="108,110,0,0" TextWrapping="NoWrap" Text="Password:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="67,138,0,0" TextWrapping="NoWrap" Text="Repete password:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="102,166,0,0" TextWrapping="NoWrap" Text="First name:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="85,194,0,0" TextWrapping="NoWrap" Text="Second name:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="104,222,0,0" TextWrapping="NoWrap" Text="Last name:" VerticalAlignment="Top"/>
+            Width="120" Click="btnRegister_Click" Height="47" FontFamily="Comic Sans MS" Foreground="Black" Background="White" FontSize="16"/>
+        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="173,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Comic Sans MS"/>
+        <PasswordBox x:Name="pbPassword" HorizontalAlignment="Left" Height="23" Margin="173,109,0,0" VerticalAlignment="Top" Width="120" FontFamily="Comic Sans MS"/>
+        <PasswordBox x:Name="pbRepPassword" HorizontalAlignment="Left" Height="23" Margin="173,137,0,0" VerticalAlignment="Top" Width="120" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="tbFirstName" HorizontalAlignment="Left" Height="23" Margin="173,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="tbSecondName" HorizontalAlignment="Left" Height="23" Margin="173,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="tbLastName" HorizontalAlignment="Left" Height="23" Margin="173,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="128,82,0,0" TextWrapping="NoWrap" Text="Login:" VerticalAlignment="Top" Foreground="#FFE34234" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="106,109,0,0" TextWrapping="NoWrap" Text="Password:" VerticalAlignment="Top" Foreground="#FFE34234" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,137,0,0" TextWrapping="NoWrap" Text="Repete password:" VerticalAlignment="Top" Foreground="#FFE34234" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="98,165,0,0" TextWrapping="NoWrap" Text="First name:" VerticalAlignment="Top" Foreground="#FFE34234" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="85,193,0,0" TextWrapping="NoWrap" Text="Second name:" VerticalAlignment="Top" Foreground="#FFE34234" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Margin="101,221,0,0" TextWrapping="NoWrap" Text="Last name:" VerticalAlignment="Top" Foreground="#FFE34234" FontFamily="Comic Sans MS"/>
 
     </Grid>
 </Window>

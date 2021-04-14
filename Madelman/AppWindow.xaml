@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Madelman"
         mc:Ignorable="d"
+        Icon="Images/logo.png"
         Title="AppWindow" Height="720" Width="1080"
                   ShowsNavigationUI="False">
 </NavigationWindow>

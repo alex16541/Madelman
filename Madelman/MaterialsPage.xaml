@@ -9,7 +9,7 @@
       Title="MaterialsPage" ShowsNavigationUI="False">
 
     <Grid>
-        <DataGrid x:Name="dgMaterials" AutoGenerateColumns="False">
+        <DataGrid x:Name="dgMaterials" AutoGenerateColumns="False" Background="White" BorderBrush="Black" FontFamily="Comic Sans MS" FontSize="14">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Артикул" Binding="{Binding Articul}"/>
                 <DataGridTextColumn Header="Название" Binding="{Binding Title}"/>
@@ -21,9 +21,9 @@
                 <DataGridTemplateColumn Visibility="Hidden">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <StackPanel>
-                                <Button x:Name="btnEdit" Content="Edit" Click="btnEdit_Click"/>
-                                <Button x:Name="btnDelate" Content="Delate" Click="btnDelate_Click"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="btnEdit" Content="Edit" Click="btnEdit_Click" Margin="5,0,20,0" BorderBrush="Black"/>
+                                <Button x:Name="btnDelate" Content="Delate" Click="btnDelate_Click"  Margin="0,0,0,5" BorderBrush="Black" Foreground="White" Background="Firebrick"/>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>

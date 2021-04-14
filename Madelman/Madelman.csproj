@@ -81,6 +81,9 @@
     <Compile Include="DepDirectorMenu.xaml.cs">
       <DependentUpon>DepDirectorMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditFurniturePage.xaml.cs">
+      <DependentUpon>EditFurniturePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EditMaterialsPage.xaml.cs">
       <DependentUpon>EditMaterialsPage.xaml</DependentUpon>
     </Compile>
@@ -162,6 +165,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DepDirectorMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditFurniturePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -277,6 +284,9 @@
       <DependentUpon>DbModel.edmx</DependentUpon>
       <LastGenOutput>DbModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

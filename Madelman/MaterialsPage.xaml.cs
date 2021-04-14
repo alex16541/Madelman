@@ -37,11 +37,16 @@ namespace Madelman
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-            int index = dgMaterials.SelectedIndex;
+            int index = dgMaterials.SelectedIndex+1;
+
             var editMP = new EditMaterialsPage();
+
             editMP.material = db.Materials.Find(index);
             editMP.owner = new EditWindow(editMP);
-            editMP.owner.ShowDialog();
+            editMP.db = this.db;
+            if (editMP.owner.ShowDialog() == true)
+                dgMaterials.Items.Refresh();
+                
         }
 
         private void btnDelate_Click(object sender, RoutedEventArgs e)

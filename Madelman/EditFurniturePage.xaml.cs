@@ -19,19 +19,19 @@ namespace Madelman
     /// <summary>
     /// Логика взаимодействия для EditMaterialsPage.xaml
     /// </summary>
-    public partial class EditMaterialsPage : Page
+    public partial class EditFurniturePage : Page
     {
         public Entities db { get; set; }
-        public Materials material { get; set; }
+        public Furniture furniture { get; set; }
         public Window owner { get; set; }
-        public EditMaterialsPage()
+        public EditFurniturePage()
         {
             InitializeComponent();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            tbTitle.Text = material.Title;
+            tbTitle.Text = furniture.Title;
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
@@ -42,7 +42,7 @@ namespace Madelman
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            material.Title = tbTitle.Text;
+            furniture.Title = tbTitle.Text;
             db.SaveChanges();
             owner.DialogResult = true;
             owner.Close();

@@ -5,12 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Madelman"
         mc:Ignorable="d"
-        Title="Login window" Height="350" Width="600" ResizeMode="NoResize" Left="500" Top="300">
-    <Grid>
-        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="218,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="loginDEtol2018"/>
-        <PasswordBox x:Name="pbPassword" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="120" Margin="218,130,0,0" Password="|ksGM5"/>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="218,207,0,0" VerticalAlignment="Top" Width="120" Click="btnLogin_Click"/>
-        <Button x:Name="btnReg" Content="Registration" HorizontalAlignment="Left" Margin="218,232,0,0" VerticalAlignment="Top" Width="120" Click="btnReg_Click"/>
+        Icon="Images/logo.png"
+        Title="Login" Height="350" Width="600" ResizeMode="NoResize" Left="500" Top="300">
+    <Grid Background="Black">
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="0,97,0,0" Stroke="Black" VerticalAlignment="Top" Width="594">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="270.45099999999996" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFE34234"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="218,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="loginDEtol2018" FontFamily="Comic Sans MS" Foreground="#FFE34234"/>
+        <PasswordBox x:Name="pbPassword" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="120" Margin="218,156,0,0" Password="|ksGM5" FontFamily="Comic Sans MS" Foreground="#FFE34234"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="414,118,0,0" VerticalAlignment="Top" Width="130" Click="btnLogin_Click" FontFamily="Comic Sans MS" Height="61" Background="#FFE34234" BorderBrush="White" Foreground="White" FontSize="18"/>
+        <Button x:Name="btnReg" Content="Registration" HorizontalAlignment="Left" Margin="414,251,0,0" VerticalAlignment="Top" Width="130" Click="btnReg_Click" FontFamily="Comic Sans MS" Background="#FFE34234" BorderBrush="Black" Height="35" FontSize="14"/>
+        <Label Content="Login:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="115,114,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
+        <Label Content="Password:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="93,151,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
 
     </Grid>
 </Window>

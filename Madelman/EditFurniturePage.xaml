@@ -1,4 +1,4 @@
-﻿<Page x:Class="Madelman.EditMaterialsPage"
+﻿<Page x:Class="Madelman.EditFurniturePage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Madelman"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="400"
-      Title="EditMaterialsPage" Background="White" Loaded="Page_Loaded">
+      Title="EditFurniturePage" Background="White" Loaded="Page_Loaded">
 
     <Grid>
         <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Height="100" Margin="157,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" FontFamily="Comic Sans MS"/>

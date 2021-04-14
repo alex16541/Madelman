@@ -8,8 +8,10 @@
       d:DesignHeight="720" d:DesignWidth="1080"
       Title="MasterMenu" Background="White">
 
-    <Grid>
-        
-
+    <Grid Background="White">
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Right" Margin="0,0,38,38" VerticalAlignment="Bottom" Width="118" Click="btnExit_Click" 
+                FontSize="20" FontFamily="Comic Sans MS" Height="50" Background="#FFE34234" Foreground="White" BorderBrush="Black"/>
+        <Label Content="Customer menu" HorizontalAlignment="Left" Margin="462,82,0,0" VerticalAlignment="Top" 
+               FontSize="21" FontFamily="Comic Sans MS" FontWeight="Bold"/>
     </Grid>
 </local:Master>

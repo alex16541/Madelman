@@ -10,9 +10,12 @@
       Background="White">
     <Grid>
         <Frame x:Name="Frame" Width="1000" Margin="0,35,0,140"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="40,0,0,50" VerticalAlignment="Bottom" Width="75" Click="btnBack_Click"/>
-        <Button x:Name="btnMaterials" Content="Materials" HorizontalAlignment="Left" Margin="839,0,0,50" VerticalAlignment="Bottom" Width="75" Click="btnMaterials_Click"/>
-        <Button x:Name="btnFurniture" Content="Furniture" HorizontalAlignment="Left" Margin="965,0,0,50" VerticalAlignment="Bottom" Width="75" Click="btnFurniture_Click"/>
+        <Button x:Name="btnMaterials" Content="Materials" HorizontalAlignment="Right" Margin="0,0,200,38" VerticalAlignment="Bottom" Width="118" Click="btnMaterials_Click"
+                 FontSize="20" FontFamily="Comic Sans MS" Height="50" Background="#FFE34234" Foreground="White" BorderBrush="Black"/>
+        <Button x:Name="btnFurniture" Content="Furniture" HorizontalAlignment="Right" Margin="0,0,38,38" VerticalAlignment="Bottom" Width="118" Click="btnFurniture_Click"
+                 FontSize="20" FontFamily="Comic Sans MS" Height="50" Background="#FFE34234" Foreground="White" BorderBrush="Black"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="40,0,0,38" VerticalAlignment="Bottom" Width="118" Click="btnBack_Click" 
+            FontSize="20" FontFamily="Comic Sans MS" Height="50" Background="#FFE34234" Foreground="White" BorderBrush="Black"/>
 
     </Grid>
 </Page>
